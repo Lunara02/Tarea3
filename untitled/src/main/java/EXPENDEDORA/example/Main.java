@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 /**
  * Clase principal que contiene el método main para simular casos de compra y uso de una expendedora.
  * @author Sebastian Ignacio Vega Varela

@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 
 /**
  * Clase Sprite, representa un Producto de tipo Bebida.

@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 /**
  * Clase Producto que se usara polimorficamente para Dulces y Bebidas.
  * Define la propiedad serie, unica de cada instancia y el metodo sabor que debe ser implementado por las clases herederas.

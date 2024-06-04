@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 
 /**
  * Clase Snickers, representa un Producto de tipo Dulces.

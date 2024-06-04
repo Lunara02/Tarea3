@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 
 /**
  * Clase Fanta, representa un Producto de tipo Bebida.

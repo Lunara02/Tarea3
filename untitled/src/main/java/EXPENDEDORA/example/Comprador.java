@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 /**
  * La clase Comprador representa a un cliente que realiza una compra en la expendedora.
  * Registra el sonido del producto adquirido y el vuelto obtenido después de la compra.

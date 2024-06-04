@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 
 /**
  * Clase Super8, representa un Producto de tipo Dulces.

@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 /**
  * Clase abstracta Dulces que representa un tipo de producto, hereda la propiedad serie.
  * Se usara para diferenciar los productos de tipo Dulces de los productos de tipo Bebida.

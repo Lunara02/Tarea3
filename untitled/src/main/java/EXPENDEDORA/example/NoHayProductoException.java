@@ -1,4 +1,4 @@
-package org.example;
+package EXPENDEDORA.example;
 /**
  * Esta clase representa una excepción que se lanza cuando no hay productos disponibles.
  * Extiende la clase abstracta Exception y proporciona una implementación personalizada del constructor.
