@@ -174,4 +174,7 @@ public class Expendedora {
         }
     }
 
+    public Deposito<Moneda> getmonCompra(){
+        return monCompra;
+    }
 }
