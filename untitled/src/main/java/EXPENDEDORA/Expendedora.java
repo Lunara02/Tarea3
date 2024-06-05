@@ -142,6 +142,22 @@ public class Expendedora {
         }
         return -1;
     }
+
+    public int getSizeProducto(int d) {
+        switch (d) {
+            case 1:
+                return coca.getSize();
+            case 2:
+                return sprite.getSize();
+            case 3:
+                return fanta.getSize();
+            case 4:
+                return snicker.getSize();
+            case 5:
+                return super8.getSize();
+        }
+        return 0;
+    }
     /**
      * Método para obtener el tamaño del depósito de monedas en la expendedora.
      * @return El tamaño del depósito de monedas.
