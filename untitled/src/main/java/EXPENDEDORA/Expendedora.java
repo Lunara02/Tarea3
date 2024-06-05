@@ -110,6 +110,13 @@ public class Expendedora {
         vuelto = 0;
         return a;
     }
+
+    public void setMonedaIngresada(Moneda a) {
+        monedaIgresada = a;
+        monCompra.addProducto(monedaIgresada);
+        Ganancias += a.getValor();
+        System.out.println(Ganancias);
+    }
     /**
      * Método para obtener el tamaño del depósito de monedas en la expendedora.
      * @return El tamaño del depósito de monedas.
