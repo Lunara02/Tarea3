@@ -158,6 +158,21 @@ public class Expendedora {
         }
         return 0;
     }
+
+    public void llenarExpendedora(){
+        coca.limpiar();
+        sprite.limpiar();
+        fanta.limpiar();
+        snicker.limpiar();
+        super8.limpiar();
+        for (int i = 0; i < numProductos; i++) {  //Rellena magicamente los depositos
+            coca.addProducto(new CocaCola(i + 100));
+            sprite.addProducto(new Sprite(i + 200));
+            fanta.addProducto(new Fanta(i + 300));
+            snicker.addProducto(new Snickers(i + 400));
+            super8.addProducto(new Super8(i + 500));
+        }
+    }
     /**
      * Método para obtener el tamaño del depósito de monedas en la expendedora.
      * @return El tamaño del depósito de monedas.
