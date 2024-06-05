@@ -86,8 +86,13 @@ public class Expendedora {
         }
         return null;
     }
+
     public void eliminarProducto() {
         productoComprado = null;
+    }
+    
+    public void EliminarMonedaIngresada() {
+        monedaIgresada = null;
     }
     public Moneda getVuelto(){
         return monVu.getProducto();
