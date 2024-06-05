@@ -8,6 +8,15 @@ public class BotonCuadrado extends JButton {
         super(nombre);
         this.setPreferredSize(new Dimension(x,y));
     }
+    public BotonCuadrado(ImageIcon nombre, int x, int y, int Relleno){
+        super(nombre);
+        if(Relleno == 1){
+            this.setContentAreaFilled(false);
+            this.setFocusPainted(false);
+            this.setOpaque(false);
+        }
+        this.setPreferredSize(new Dimension(x,y));
+    }
 }
 
 
