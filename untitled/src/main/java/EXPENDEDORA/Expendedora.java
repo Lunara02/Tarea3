@@ -33,7 +33,6 @@ public class Expendedora {
     }
     /**
      * Método para comprar un producto de la expendedora.
-     * @param m La moneda utilizada para la compra.
      * @param cual El tipo de producto que se desea comprar.
      * @return El producto comprado.
      * @throws PagoIncorrectoException Si la moneda es nula.
@@ -81,6 +80,12 @@ public class Expendedora {
      * Método para obtener el vuelto acumulado en la máquina expendedora.
      * @return La moneda que representa el vuelto.
      */
+    public Producto getProducto() {
+        if (productoComprado != null) {
+            return productoComprado;
+        }
+        return null;
+    }
     public Moneda getVuelto(){
         return monVu.getProducto();
     }
