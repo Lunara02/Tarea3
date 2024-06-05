@@ -117,6 +117,10 @@ public class Expendedora {
         Ganancias += a.getValor();
         System.out.println(Ganancias);
     }
+
+    public int getDineroIngresado() {
+        return Ganancias;
+    }
     /**
      * Método para obtener el tamaño del depósito de monedas en la expendedora.
      * @return El tamaño del depósito de monedas.
