@@ -22,6 +22,7 @@ public class Expendedora {
      * @param numProductos El número de productos que se agregarán a la expendedora.
      */
     public Expendedora(int numProductos) {
+        this.numProductos = numProductos;
         for (int i = 0; i < numProductos; i++) {  //Rellena magicamente los depositos
             coca.addProducto(new CocaCola(i + 100));
             sprite.addProducto(new Sprite(i + 200));
