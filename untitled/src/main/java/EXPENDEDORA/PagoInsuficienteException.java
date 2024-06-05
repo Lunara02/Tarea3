@@ -1,4 +1,4 @@
-package EXPENDEDORA.example;
+package EXPENDEDORA;
 /**
  * Esta clase representa una excepción que se lanza cuando el pago es insuficiente.
  * Extiende la clase abstracta Exception y proporciona una implementación personalizada del constructor.

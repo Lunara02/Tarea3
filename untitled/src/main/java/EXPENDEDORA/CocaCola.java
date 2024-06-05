@@ -1,4 +1,4 @@
-package EXPENDEDORA.example;
+package EXPENDEDORA;
 
 /**
  * Clase CocaCola, representa un Producto de tipo Bebida.

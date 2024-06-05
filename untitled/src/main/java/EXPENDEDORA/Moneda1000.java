@@ -1,4 +1,4 @@
-package EXPENDEDORA.example;
+package EXPENDEDORA;
 /**
  * La clase Moneda1000 representa una moneda de valor 1000.
  * Extiende la clase abstracta Moneda y proporciona la implementación del método getValor().

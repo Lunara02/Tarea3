@@ -1,4 +1,4 @@
-package EXPENDEDORA.example;
+package EXPENDEDORA;
 
 /**
  * La clase Expendedora representa una máquina expendedora que vende productos como bebidas o dulces.

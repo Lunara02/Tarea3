@@ -1,4 +1,4 @@
-package EXPENDEDORA.example;
+package EXPENDEDORA;
 
 /**
  * Clase abstracta Bebida que representa un tipo de producto, hereda la propiedad serie.

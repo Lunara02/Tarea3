@@ -1,4 +1,4 @@
-package EXPENDEDORA.example;
+package EXPENDEDORA;
 /**
  * La clase abstracta Moneda representa un tipo genérico de moneda.
  * Implementa la interfaz Comparable para permitir la comparación entre monedas basadas en su valor.
