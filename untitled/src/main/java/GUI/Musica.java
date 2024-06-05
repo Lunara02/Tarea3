@@ -18,4 +18,10 @@ public class Musica {
             ex.printStackTrace();
         }
     }
+    public void stopMusica() {
+        if (clip != null && clip.isRunning()) {
+            clip.stop();
+            clip.close();
+        }
+    }
 }
