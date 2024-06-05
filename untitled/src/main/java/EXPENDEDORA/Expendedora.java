@@ -173,11 +173,5 @@ public class Expendedora {
             super8.addProducto(new Super8(i + 500));
         }
     }
-    /**
-     * Método para obtener el tamaño del depósito de monedas en la expendedora.
-     * @return El tamaño del depósito de monedas.
-     */
-    public int getmonVuSize(){
-        return monVu.getSize();
-    }
+
 }
