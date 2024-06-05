@@ -45,4 +45,7 @@ public class Deposito<T> {
     public void limpiar(){
         arr.clear();
     }
+    public T getIndexObject(int a){
+        return arr.get(a);
+    }
 }
