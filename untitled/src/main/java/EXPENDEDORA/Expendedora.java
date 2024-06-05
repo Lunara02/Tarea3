@@ -40,9 +40,9 @@ public class Expendedora {
      * @throws PagoInsuficienteException Si el valor de la moneda no es suficiente para comprar el producto.
      * @throws NoHayProductoException Si no hay existencias del producto seleccionado.
      */
-    public Producto ComprarProducto(Moneda m, Productos cual)throws Exception{
-        if(m != null){ //Caso PagoIncorrecto
-            if (m.getValor() >= cual.RetValor()) { //Caso PagoInsuficiente
+    public void ComprarProducto(Productos cual) throws NoHayProductoException, PagoIncorrectoException, PagoInsuficienteException {
+        if (monedaIgresada != null) {
+            if (Ganancias >= cual.RetValor()) { //Caso PagoInsuficiente
                 Deposito<? extends Producto> seleccion = null; //Selector de deposito para referenciar
                 switch (cual) {
                     case COCACOLA:
@@ -61,19 +61,21 @@ public class Expendedora {
                         seleccion = super8;
                         break;
                 }
-                if (seleccion.getSize() != 0) { //Caso NoHayProductos
-                    for (int i = 0; i < (m.getValor() - cual.RetValor()) / 100; i++) {
+                if (seleccion.getSize() != 0) {
+                    for (int i = 0; i < (Ganancias - cual.RetValor()) / 100; i++) {
                         monVu.addProducto(new Moneda100());
                     }
-                    return seleccion.getProducto();
+                    Ganancias -= cual.RetValor();
+                    productoComprado = seleccion.getProducto();
+                } else {
+                    throw new NoHayProductoException();
                 }
-                monVu.addProducto(m);
-                throw new NoHayProductoException();
+            } else {
+                throw new PagoInsuficienteException();
             }
-            monVu.addProducto(m);
-            throw new PagoInsuficienteException();
+        } else {
+            throw new PagoIncorrectoException();
         }
-        throw new PagoIncorrectoException();
     }
     /**
      * Método para obtener el vuelto acumulado en la máquina expendedora.
