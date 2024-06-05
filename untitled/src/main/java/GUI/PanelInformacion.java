@@ -16,4 +16,7 @@ public class PanelInformacion extends JPanel {
     public void new_credito(int x){
         Credito.setText("Credito: " +x);
     }
+    public void new_producto(String producto){
+        IngreseProducto.setText("Seleccione producto: "+ producto);
+    }
 }
