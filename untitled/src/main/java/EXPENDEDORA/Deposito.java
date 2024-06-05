@@ -32,7 +32,7 @@ public class Deposito<T> {
             return null;
         }
         else{
-            return arr.remove(0);
+            return arr.removeFirst();
         }
     }
     /**
