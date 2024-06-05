@@ -10,7 +10,12 @@ package EXPENDEDORA;
 public class Expendedora {
     private Deposito<Bebida> coca = new Deposito<>(), sprite = new Deposito<>(), fanta = new Deposito<>(); //Deposito de Bebidas
     private Deposito<Dulces> snicker = new Deposito<>(), super8 = new Deposito<>(); //Deposito de Dulces
-    private Deposito<Moneda> monVu = new Deposito<>(); //Deposito de Monedas
+    private Deposito<Moneda> monVu = new Deposito<>(), monCompra = new Deposito<>(); //Deposito de Monedas
+    private Producto productoComprado = null;
+    private int vuelto = 0;
+    private int numProductos = 0;
+    private Moneda monedaIgresada = null;
+    private int Ganancias = 0;
     /**
      * Constructor de la clase Expendedora.
      * Rellena magicamente los depositos con el producto correspondiente
