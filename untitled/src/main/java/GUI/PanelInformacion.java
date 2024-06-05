@@ -19,4 +19,7 @@ public class PanelInformacion extends JPanel {
     public void new_producto(String producto){
         IngreseProducto.setText("Seleccione producto: "+ producto);
     }
+    public void LanzarError(String a){
+        Error.setText(a);
+    }
 }
