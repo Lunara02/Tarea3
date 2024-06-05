@@ -121,6 +121,27 @@ public class Expendedora {
     public int getDineroIngresado() {
         return Ganancias;
     }
+
+    public int getSizeProducto() {
+        if (productoComprado != null) {
+            if (productoComprado.sabor().equals("CocaCola")) {
+                return coca.getSize();
+            }
+            if (productoComprado.sabor().equals("Sprite")) {
+                return sprite.getSize();
+            }
+            if (productoComprado.sabor().equals("Fanta")) {
+                return fanta.getSize();
+            }
+            if (productoComprado.sabor().equals("Snickers")) {
+                return snicker.getSize();
+            }
+            if (productoComprado.sabor().equals("Super8")) {
+                return super8.getSize();
+            }
+        }
+        return -1;
+    }
     /**
      * Método para obtener el tamaño del depósito de monedas en la expendedora.
      * @return El tamaño del depósito de monedas.
