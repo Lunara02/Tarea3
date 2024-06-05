@@ -13,4 +13,7 @@ public class PanelInformacion extends JPanel {
         add(IngreseProducto);
         add(Error);
     }
+    public void new_credito(int x){
+        Credito.setText("Credito: " +x);
+    }
 }
