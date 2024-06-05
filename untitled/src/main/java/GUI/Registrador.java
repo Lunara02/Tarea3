@@ -11,4 +11,9 @@ public class Registrador extends JLabel {
         this.setHorizontalAlignment(CENTER);
         this.setOpaque(true);
     }
+    
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+    }
 }
