@@ -42,4 +42,7 @@ public class Deposito<T> {
     public int getSize(){
         return arr.size();
     }
+    public void limpiar(){
+        arr.clear();
+    }
 }
