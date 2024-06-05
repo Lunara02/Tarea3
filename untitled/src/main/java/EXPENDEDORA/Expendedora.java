@@ -90,12 +90,25 @@ public class Expendedora {
     public void eliminarProducto() {
         productoComprado = null;
     }
-    
+
     public void EliminarMonedaIngresada() {
         monedaIgresada = null;
     }
-    public Moneda getVuelto(){
-        return monVu.getProducto();
+    public int getVuelto() {
+        if (monVu.getSize() != 0) {
+            while (monVu.getSize() != 0) {
+                System.out.println(monVu.getSize());
+                Moneda m = monVu.getProducto();
+                vuelto += m.getValor();
+                System.out.println(m.getValor());
+            }
+        } else {
+            vuelto = Ganancias;
+            Ganancias = 0;
+        }
+        int a = vuelto;
+        vuelto = 0;
+        return a;
     }
     /**
      * Método para obtener el tamaño del depósito de monedas en la expendedora.
