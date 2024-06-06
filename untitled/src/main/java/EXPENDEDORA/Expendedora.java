@@ -33,8 +33,8 @@ public class Expendedora {
     }
     /**
      * Método para comprar un producto de la expendedora.
+     *
      * @param cual El tipo de producto que se desea comprar.
-     * @return El producto comprado.
      * @throws PagoIncorrectoException Si la moneda es nula.
      * @throws PagoInsuficienteException Si el valor de la moneda no es suficiente para comprar el producto.
      * @throws NoHayProductoException Si no hay existencias del producto seleccionado.
@@ -76,9 +76,12 @@ public class Expendedora {
             throw new PagoIncorrectoException();
         }
     }
+
     /**
-     * Método para obtener el vuelto acumulado en la máquina expendedora.
-     * @return La moneda que representa el vuelto.
+     *
+     * Método para obtener el producto comprado.
+     *
+     * @return El producto comprado
      */
     public Producto getProducto() {
         if (productoComprado != null) {
@@ -87,13 +90,25 @@ public class Expendedora {
         return null;
     }
 
+    /**
+     * Método para eliminar el producto comprado de la expendedora.
+     */
     public void eliminarProducto() {
         productoComprado = null;
     }
 
+    /**
+     * Método para eliminar la moneda ingresada en la expendedora.
+     */
     public void EliminarMonedaIngresada() {
         monedaIgresada = null;
     }
+
+    /**
+     * Método para obtener el vuelto acumulado en la máquina expendedora.
+     *
+     * @return El valor del vuelto.
+     */
     public int getVuelto() {
         if (monVu.getSize() != 0) {
             while (monVu.getSize() != 0) {
@@ -111,6 +126,11 @@ public class Expendedora {
         return a;
     }
 
+    /**
+     * Método para establecer la moneda ingresada en la expendedora.
+     *
+     * @param a Es la moneda ingresada.
+     */
     public void setMonedaIngresada(Moneda a) {
         monedaIgresada = a;
         monCompra.addProducto(monedaIgresada);
@@ -118,10 +138,20 @@ public class Expendedora {
         System.out.println(Ganancias);
     }
 
+    /**
+     * Método para obtener el dinero ingresado en la máquina expendedora.
+     *
+     * @return El valor del dinero ingresado.
+     */
     public int getDineroIngresado() {
         return Ganancias;
     }
 
+    /**
+     * Método para obtener el tamaño del deposito de un producto.
+     *
+     * @return El tamaño del deposito del producto.
+     */
     public int getSizeProducto() {
         if (productoComprado != null) {
             if (productoComprado.sabor().equals("CocaCola")) {
@@ -143,6 +173,12 @@ public class Expendedora {
         return -1;
     }
 
+    /**
+     * Método para obtener el tamaño del deposito de un producto.
+     *
+     * @param d El tipo de producto.
+     * @return El tamaño del deposito del producto.
+     */
     public int getSizeProducto(int d) {
         switch (d) {
             case 1:
@@ -159,6 +195,9 @@ public class Expendedora {
         return 0;
     }
 
+    /**
+     * Método para rellenar los depositos de la expendedora.
+     */
     public void llenarExpendedora(){
         coca.limpiar();
         sprite.limpiar();
@@ -174,6 +213,11 @@ public class Expendedora {
         }
     }
 
+    /**
+     * Método para obtener el deposito de todas las monedas ingresadas.
+     *
+     * @return El deposito de las monedas ingresadas.
+     */
     public Deposito<Moneda> getmonCompra(){
         return monCompra;
     }
