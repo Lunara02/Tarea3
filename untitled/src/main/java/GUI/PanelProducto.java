@@ -8,5 +8,9 @@ public class PanelProducto extends JPanel {
     public PanelProducto(){
         this.setOpaque(false);
     }
+    public void PintarProducto(ImageIcon Imagen, int x, int y){
+        Producto = new PintarProducto(Imagen, x, y);
+        repaint();
+    }
     
 }
