@@ -205,7 +205,7 @@ class PanelExpendedor extends JPanel {
             }
         });
 
-        EasterEgg.addActionListener(new ActionListener() {
+        EasterEgg.addActionListener(new ActionListener() { // ?
             @Override
             public void actionPerformed(ActionEvent e) {
                 activable += 1;
