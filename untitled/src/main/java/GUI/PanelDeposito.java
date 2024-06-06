@@ -30,4 +30,22 @@ public class PanelDeposito extends JPanel{
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
     }
+    public void handleMouseClick() {
+        Producto p = Ref.getProducto();
+        int y = Ref.getSizeProducto();
+        if(p!=null){
+            if(y>=0){
+            }
+        }
+        else{
+            System.out.println("RELLENAR");
+            Ref.llenarExpendedora();
+            DepCocacola = new Depositos(Ref, new ImageIcon(getClass().getClassLoader().getResource("ProCocaCola.png")), 1,48,29);
+            DepSprite = new Depositos(Ref, new ImageIcon(getClass().getClassLoader().getResource("ProSprite.png")), 2,28,29);
+            DepFanta = new Depositos(Ref, new ImageIcon(getClass().getClassLoader().getResource("ProFanta.png")), 3,48,36);
+            DepSnickers = new Depositos(Ref, new ImageIcon(getClass().getClassLoader().getResource("ProSnickers.png")), 4,40,18);
+            DepSuper8 = new Depositos(Ref, new ImageIcon(getClass().getClassLoader().getResource("ProSuper8.png")), 5,60,24);
+        }
+        repaint();
+    }
 }
