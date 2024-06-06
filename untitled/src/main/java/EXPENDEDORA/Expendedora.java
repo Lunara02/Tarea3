@@ -5,7 +5,7 @@ package EXPENDEDORA;
  * Esta vende los productos al comprador dependiendo de los parametros otorgados.
  * Crea magicamente Productos que seran puestos en los depositos correspondientes.
  * Finalmente retorna el vuelto y el producto seleccionado.
- * @author Sebastian Vega Ignacio Varela
+ * @author Braian Urra
  */
 public class Expendedora {
     private Deposito<Bebida> coca = new Deposito<>(), sprite = new Deposito<>(), fanta = new Deposito<>(); //Deposito de Bebidas

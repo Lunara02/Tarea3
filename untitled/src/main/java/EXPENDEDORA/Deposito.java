@@ -42,9 +42,20 @@ public class Deposito<T> {
     public int getSize(){
         return arr.size();
     }
+
+    /**
+     * Metodo para vaciar el deposito.
+     */
     public void limpiar(){
         arr.clear();
     }
+
+    /**
+     * Metodo para obtener el producto en una posicion especifica del deposito.
+     *
+     * @param a Indice del producto a retirar.
+     * @return El producto de la posicion especificada.
+     */
     public T getIndexObject(int a){
         return arr.get(a);
     }
