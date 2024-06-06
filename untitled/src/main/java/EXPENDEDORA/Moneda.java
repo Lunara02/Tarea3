@@ -4,7 +4,7 @@ package EXPENDEDORA;
  * Implementa la interfaz Comparable para permitir la comparación entre monedas basadas en su valor.
  * @author Cristobal
  */
-abstract class Moneda implements Comparable<Moneda> {
+public abstract class Moneda implements Comparable<Moneda> {
     public Moneda(){
     }
     /**
