@@ -10,6 +10,6 @@ public class PagoIncorrectoException extends Exception{
      * Utiliza el constructor de la superclase Exception para enviar el mensaje.
      */
     public PagoIncorrectoException(){
-        super("[NO SE A INSERTADO MONEDA]");
+        super("[ INGRESE MONEDA ]");
     }
 }
