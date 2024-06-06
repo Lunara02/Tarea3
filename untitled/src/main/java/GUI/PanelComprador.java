@@ -114,4 +114,9 @@ class PanelComprador extends JPanel {
         Centro.add(moneda1000Button);
         this.add(Centro,BorderLayout.CENTER);
     }
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage((new ImageIcon(getClass().getClassLoader().getResource("Com.png"))).getImage(), 0,0,this);
+    }
 }
