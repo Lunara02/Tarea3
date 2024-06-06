@@ -10,4 +10,12 @@ public class PanelPrincipal extends JPanel {
     private PanelInformacion panelInformacion;
     private Expendedora expPrincipal = new Expendedora(5);
     private PanelProducto Product = new PanelProducto();
+    public PanelPrincipal () {
+        panelInformacion = new PanelInformacion();
+        panelExpendedor = new PanelExpendedor(expPrincipal, panelInformacion, Product);
+        panelComprador = new PanelComprador(expPrincipal, panelInformacion, Product);
+        setLayout(new BorderLayout());
+        add(panelExpendedor, BorderLayout.CENTER);
+        add(panelComprador, BorderLayout.EAST);
+    }
 }
