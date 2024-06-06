@@ -11,5 +11,7 @@ public class PintarProducto{
         this.x = x;
         this.y = y;
     }
-
+    protected void paintComponent(Graphics g) {
+        g.drawImage(Imagen.getImage(), x, y, null);
+    }
 }
