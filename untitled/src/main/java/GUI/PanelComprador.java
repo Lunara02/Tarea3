@@ -59,7 +59,20 @@ class PanelComprador extends JPanel {
         queBebiste.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               
+                if (Comprador.getProducto() != null) {
+                    queProducto.setText(Comprador.getProducto().sabor());
+                    if (Comprador.getProducto() instanceof Bebida) {
+                        sonido.playMusica("Beber", 0);
+                    }
+                    if (Comprador.getProducto() instanceof Dulces) {
+                        sonido.playMusica("Crunch", 0);
+                    }
+                } else {
+                    queProducto.setText("Nada");
+                }
+                Comprador.eliminarProducto();
+                Product.VaciarProducto();
+
             }
         });
 
