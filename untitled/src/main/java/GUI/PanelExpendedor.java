@@ -373,4 +373,10 @@ class PanelExpendedor extends JPanel {
 
         this.add(Centro);
     }
+    
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage((new ImageIcon(getClass().getClassLoader().getResource("Exp.png"))).getImage(), 0, 0, this);
+    }
 }
