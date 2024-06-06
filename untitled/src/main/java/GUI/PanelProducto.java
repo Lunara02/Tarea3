@@ -16,5 +16,10 @@ public class PanelProducto extends JPanel {
         Producto = null;
         repaint();
     }
-    
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if(Producto != null) {
+            Producto.paintComponent(g);
+        }
+    }
 }
