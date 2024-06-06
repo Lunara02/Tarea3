@@ -75,6 +75,43 @@ class PanelComprador extends JPanel {
 
             }
         });
+        PanelRelleno Norte = new PanelRelleno(0,65,false);
+        this.add(Norte,BorderLayout.NORTH);
 
+        PanelRelleno Este = new PanelRelleno(44,0,false);
+        this.add(Este,BorderLayout.EAST);
+
+        PanelRelleno Oeste = new PanelRelleno(44,0,false);
+        this.add(Oeste,BorderLayout.WEST);
+
+        PanelRelleno Sur = new PanelRelleno(0,340,false);
+        Sur.setLayout(new BorderLayout());
+
+        PanelRelleno SurSur = new PanelRelleno(0,200,false);
+        Sur.add(SurSur,BorderLayout.SOUTH);
+
+        PanelRelleno SurNorte = new PanelRelleno(0,50, false);
+        Sur.add(SurNorte, BorderLayout.NORTH);
+
+        PanelRelleno SurEste = new PanelRelleno(32,0, false);
+        Sur.add(SurEste, BorderLayout.EAST);
+
+        PanelRelleno SurOeste = new PanelRelleno(32,0, false);
+        Sur.add(SurOeste, BorderLayout.WEST);
+
+        PanelRelleno SurCentro = new PanelRelleno(0,0,false);
+        SurCentro.setLayout(new GridLayout(2,1,0,10));
+        SurCentro.add(queBebiste);
+        SurCentro.add(queProducto);
+        Sur.add(SurCentro, BorderLayout.CENTER);
+
+        this.add(Sur,BorderLayout.SOUTH);
+
+        PanelRelleno Centro = new PanelRelleno(0,0,false);
+        Centro.setLayout(new GridLayout(3,1,0,7));
+        Centro.add(moneda100Button);
+        Centro.add(moneda500Button);
+        Centro.add(moneda1000Button);
+        this.add(Centro,BorderLayout.CENTER);
     }
 }
