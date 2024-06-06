@@ -10,6 +10,6 @@ public class PagoInsuficienteException extends Exception{
      * Utiliza el constructor de la superclase Exception para enviar el mensaje.
      */
     public PagoInsuficienteException(){
-        super("[MONEDA INSUFICIENTE PARA REALIZAR PAGO]");
+        super("[ CREDITO INSUFICIENTE ]");
     }
 }
