@@ -32,25 +32,36 @@ class PanelComprador extends JPanel {
         moneda100Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Comprador.setMonedaIngresada(new Moneda100());
+                panelInformacion.new_credito(Comprador.getDineroIngresado());
+                sonido.playMusica("sonido", 0);
             }
         });
         moneda500Button = new BotonCuadrado(iconMoneda500, 100, 50, 1);
         moneda500Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Comprador.setMonedaIngresada(new Moneda500());
+                panelInformacion.new_credito(Comprador.getDineroIngresado());
+                sonido.playMusica("sonido", 0);
             }
         });
         moneda1000Button = new BotonCuadrado(iconMoneda1000, 100, 50, 1);
         moneda1000Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Comprador.setMonedaIngresada(new Moneda1000());
+                panelInformacion.new_credito(Comprador.getDineroIngresado());
+                sonido.playMusica("sonido", 0);
             }
         });
 
         queBebiste.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+               
             }
         });
+
     }
 }
