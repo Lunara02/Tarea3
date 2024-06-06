@@ -373,7 +373,7 @@ class PanelExpendedor extends JPanel {
 
         this.add(Centro);
     }
-    
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
