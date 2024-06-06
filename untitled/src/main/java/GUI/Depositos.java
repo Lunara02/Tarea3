@@ -23,5 +23,17 @@ public class Depositos extends JPanel {
         }
         mettipo = 1;
     }
+    public Depositos(ImageIcon Imagen, int tamaño, int X, int Y, int sumx, int sumy){
+        this.setOpaque(false);
+        this.exp = exp;
+        this.Imagen = Imagen.getImage();
+        this.tipo = tamaño;
+        ProdDep = new ArrayList<>();
+        for(int x = 0; x < tipo; x++){
+            PintarProducto Pintura = new PintarProducto(Imagen, X + x*sumx, Y - x*sumy);
+            ProdDep.add(Pintura);
+        }
+        mettipo = 2;
+    }
     
 }
