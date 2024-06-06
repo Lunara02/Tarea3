@@ -12,5 +12,9 @@ public class PanelProducto extends JPanel {
         Producto = new PintarProducto(Imagen, x, y);
         repaint();
     }
+    public void VaciarProducto(){
+        Producto = null;
+        repaint();
+    }
     
 }
