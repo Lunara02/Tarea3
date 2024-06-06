@@ -9,5 +9,10 @@ public class PanelRelleno extends JPanel {
         this.setOpaque(TF);
         this.setPreferredSize(new Dimension(x,y));
     }
+    public PanelRelleno(Image a, int  x, int y){
+        this.setPreferredSize(new Dimension(x,y));
+        this.Dep = a;
+    }
+   
 
 }
