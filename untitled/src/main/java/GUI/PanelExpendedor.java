@@ -5,6 +5,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+/**
+ * PanelExpendedor es un JPanel que simula la interfaz de usuario de una máquina expendedora.
+ * Contiene botones para diferentes productos, muestra información, maneja las interacciones del usuario,
+ * y reproduce sonidos.
+ * @author Sebastian
+ */
 class PanelExpendedor extends JPanel {
     private Expendedora expendedora;
     private BotonCuadrado CocaCola;
@@ -27,6 +33,13 @@ class PanelExpendedor extends JPanel {
     private FrameGanancias DepGanancia;
     private int magic = 0;
     private int activable = 0;
+
+    /**
+     * Constructor de Panel Expendedor, permite crear la expendedora con todas sus funciones
+     * @param expendedora la Referencia a la expendedora principal
+     * @param panelInformacion panel que despliega la informacion de la expendedora
+     * @param Product esto es una referencia al producto entregado para saber cuando se debe mostrar el producto o no
+     */
     public PanelExpendedor(Expendedora expendedora, PanelInformacion panelInformacion, PanelProducto Product) {
         this.expendedora = expendedora;
         this.setLayout(new BorderLayout());
@@ -374,6 +387,9 @@ class PanelExpendedor extends JPanel {
         this.add(Centro);
     }
 
+    /**
+     * Pinta la expendedora
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
