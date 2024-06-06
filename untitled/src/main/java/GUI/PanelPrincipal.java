@@ -18,7 +18,7 @@ public class PanelPrincipal extends JPanel {
         add(panelExpendedor, BorderLayout.CENTER);
         add(panelComprador, BorderLayout.EAST);
     }
-    
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);

@@ -10,6 +10,6 @@ public class NoHayProductoException extends Exception{
      * Utiliza el constructor de la superclase Exception para enviar el mensaje.
      */
     public NoHayProductoException(){
-        super("[NO HAY PRODUCTOS]");
+        super("[ NO HAY PRODUCTOS ]");
     }
 }
