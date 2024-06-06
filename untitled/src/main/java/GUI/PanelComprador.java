@@ -40,6 +40,12 @@ class PanelComprador extends JPanel {
 
         moneda100Button = new BotonCuadrado(iconMoneda100, 100, 50, 1);
         moneda100Button.addActionListener(new ActionListener() {
+            /**
+             * Evento para el botón de moneda de 100.
+             * Agrega una moneda de 100 a la expendedora, actualiza el crédito y reproduce un sonido.
+             *
+             * @param e el evento de acción.
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
                 Comprador.setMonedaIngresada(new Moneda100());
@@ -49,6 +55,12 @@ class PanelComprador extends JPanel {
         });
         moneda500Button = new BotonCuadrado(iconMoneda500, 100, 50, 1);
         moneda500Button.addActionListener(new ActionListener() {
+            /**
+             * Evento para el botón de moneda de 500.
+             * Agrega una moneda de 100 a la expendedora, actualiza el crédito y reproduce un sonido.
+             *
+             * @param e el evento de acción.
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
                 Comprador.setMonedaIngresada(new Moneda500());
@@ -58,6 +70,13 @@ class PanelComprador extends JPanel {
         });
         moneda1000Button = new BotonCuadrado(iconMoneda1000, 100, 50, 1);
         moneda1000Button.addActionListener(new ActionListener() {
+            /**
+             * Evento para el botón de moneda de 1000.
+             * Agrega una moneda de 100 a la expendedora, actualiza el crédito y reproduce un sonido.
+             *
+             * @param e el evento de acción.
+             */
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 Comprador.setMonedaIngresada(new Moneda1000());
@@ -67,6 +86,13 @@ class PanelComprador extends JPanel {
         });
 
         queBebiste.addActionListener(new ActionListener() {
+            /**
+             * Manejador del evento para el botón que consume el producto.
+             * Muestra el nombre del producto consumido, reproduce un sonido adecuado,
+             * y actualiza el estado de la expendedora y del panel del producto.
+             *
+             * @param e el evento de acción.
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (Comprador.getProducto() != null) {
