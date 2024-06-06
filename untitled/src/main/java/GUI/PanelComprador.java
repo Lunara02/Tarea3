@@ -5,7 +5,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-
+/**
+ * La clase PanelComprador es una extensión de JPanel que permite al usuario interactuar con una expendedora,
+ * ingresar monedas y consumir productos.
+ */
 class PanelComprador extends JPanel {
     private Expendedora Comprador;
     private BotonCuadrado moneda100Button;
@@ -16,8 +19,15 @@ class PanelComprador extends JPanel {
     private BotonCuadrado queBebiste = new BotonCuadrado("Consumir", 100, 50);
     private Registrador queProducto = new Registrador("");
 
+    /**
+     * Crea una instancia de PanelComprador.
+     *
+     * @param expendedora la expendedora.
+     * @param PanelInformacion el panel que muestra la información del crédito y el producto.
+     * @param Product el panel que muestra el producto seleccionado.
+     */
     public PanelComprador(Expendedora expendedora, PanelInformacion PanelInformacion, PanelProducto Product) {
-        queBebiste.setMargin(new Insets(5, 0, 5, 0)); // Adjust the insets (top, left, bottom, right)
+        queBebiste.setMargin(new Insets(5, 0, 5, 0));
         queBebiste.setFont(new Font(queBebiste.getFont().getName(), queBebiste.getFont().getStyle(), 12));
         this.setPreferredSize(new Dimension(146, 0));
         this.Comprador = expendedora;
@@ -114,6 +124,11 @@ class PanelComprador extends JPanel {
         Centro.add(moneda1000Button);
         this.add(Centro,BorderLayout.CENTER);
     }
+    /**
+     * Sobrescribe el método paintComponent para dibujar una imagen de fondo.
+     *
+     * @param g el contexto gráfico en el que se dibuja.
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
