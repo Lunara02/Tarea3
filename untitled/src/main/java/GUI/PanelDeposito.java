@@ -26,4 +26,8 @@ public class PanelDeposito extends JPanel{
         this.add(DepSnickers);
         this.add(DepSuper8);
     }
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+    }
 }
