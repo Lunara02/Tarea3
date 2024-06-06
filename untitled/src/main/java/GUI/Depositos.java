@@ -35,5 +35,26 @@ public class Depositos extends JPanel {
         }
         mettipo = 2;
     }
-    
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        int Can;
+        if(mettipo == 1) {
+            if (exp.getSizeProducto(tipo) > 5) {
+                Can = 5;
+            } else {
+                Can = exp.getSizeProducto(tipo);
+            }
+            for (int x = Can; x > 0; x--) {
+                ProdDep.get(x - 1).paintComponent(g);
+            }
+        }
+        if(mettipo == 2){
+            Can = tipo;
+            for(int x = Can; x > 0; x--){
+                ProdDep.get(x - 1).paintComponent(g);
+            }
+        }
+    }
 }
