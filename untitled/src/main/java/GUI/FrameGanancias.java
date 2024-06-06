@@ -4,6 +4,11 @@ import EXPENDEDORA.*;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * La clase FrameGanancias crea un Frame que permite visualizar las ganancias de la expendedora, mostrando las monedas
+ * de 100, 500 o 1000 que se han ingresado a la maquina.
+ * @author Braian Urra
+ */
 public class FrameGanancias extends JFrame {
     private PanelRelleno Fondo;
     private Depositos Moneda100;
@@ -11,6 +16,14 @@ public class FrameGanancias extends JFrame {
     private Depositos Moneda1000;
     private int m100 = 0, m500 = 0, m1000 = 0;
     private Deposito<Moneda> Ganancia;
+
+    /**
+     * Constructor de la clase FrameGanancias
+     * Configura el tamaño, la ubicacion de las monedas y calcula la cantidad de cada tipo de moneda.
+     * @param a Titulo de la ventana
+     * @param Ref Referencia a la expendedora para obtener las ganancias.
+     * @param Dep La imagen de fondo para el Panel
+     */
     public FrameGanancias(String a, Expendedora Ref, Image Dep){
         setResizable(false);
         setSize(314, 180);
